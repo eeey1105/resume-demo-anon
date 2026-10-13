@@ -3,8 +3,8 @@
 <head data-page-node-id="vnbhrjh3YrvWJTAdDJasV1">
 <meta charset="UTF-8" data-page-node-id="41RdcyKSOobGpuHHTD7MGz">
 <meta name="viewport" content="width=device-width, initial-scale=1" data-page-node-id="pGRg3LpwaC2BgnpZ3pBXjB">
-<title>匿名简历 · 资深资产管理 × AI 资管信息化</title>
-<meta name="description" content="某候选人，10 年头部房企资深资产管理经验，现任 A 集团资管及AI数智化负责人。以 AI 重构资管信息化全流程，跨界复合型人才。" data-page-node-id="VF9p3xd7QSyFNlRkynxJzr">
+<title>Eddie | 资深资产管理 × AI 资管信息化</title>
+<meta name="description" content="Eddie，10 年头部房企资深资产管理经验，现任 A 集团资管及AI数智化负责人。以 AI 重构资管信息化全流程，跨界复合型人才。" data-page-node-id="VF9p3xd7QSyFNlRkynxJzr">
 <style>
 @font-face{font-family:'HarmonyOS Sans SC';font-style:normal;font-weight:400;font-display:swap;src:url(assets/harmonyos-h1.woff2) format('woff2');}
 :root{
@@ -269,10 +269,9 @@ html,body{overflow-x:hidden;}
 
   <!-- 人物：透明层，压在标题之上 -->
   <div class="photo" data-page-node-id="wlBVvDC5JAoNxcizE7mEtP">
-    <img src="assets/hero-anon.png" alt="匿名形象示意" width="826" height="1400" data-page-node-id="T1Q9wWx7gDLQfWdbG4fFNg">
+    <img src="assets/hero-person.webp" alt="Eddie 职业形象照" width="826" height="1400" data-page-node-id="T1Q9wWx7gDLQfWdbG4fFNg">
     <div class="onpic" data-page-node-id="VOmESC6bYYe2KUpcuARP4R">
-      <div class="nm" data-page-node-id="Dya29DL1BsYjbIC3BrB1XT">匿名候选人</div>
-      <div class="en" data-page-node-id="lLt8oMK0P7iCa57aZXfb9G">ANONYMIZED</div>
+      <div class="nm" data-page-node-id="Dya29DL1BsYjbIC3BrB1XT">Eddie</div>
       <div class="rl" data-page-node-id="exLF87MZyuFiGiT7bNAIsH">A 集团 · <i data-page-node-id="wi78nQGXHx01urW9sll26T">资管及AI数智化负责人</i></div>
       <div class="nums" data-page-node-id="E3nFR2skaDjKWSDmRakX3T">
         <div data-page-node-id="e0Rvsx6AmqJEuprrCxqqTs"><b data-page-node-id="1XCFGqNWpLGobD4fwHz2Gh"><span class="cu" data-to="200" data-page-node-id="GRTqhKPrxXU4POgxBLp0uG">200</span><small data-page-node-id="exhzH7nFayku72Kq9fbiZK">亿</small></b><span data-page-node-id="QM4CQX0nfnMLAJPHUoAPTR">现管规模</span></div>
@@ -646,7 +645,7 @@ setTimeout(countUp,420);
 
 /* ================= 打印 ================= */
 function buildPrint(){
-  var h='<h1>匿名候选人 ANONYMIZED</h1><div class="p-sub">资深资产管理 × AI 资管信息化 · A 集团资管及AI数智化负责人 · 联系方式已隐藏</div>';
+  var h='<h1>Eddie</h1><div class="p-sub">资深资产管理 × AI 资管信息化 · A 集团资管及AI数智化负责人 · 联系方式已隐藏</div>';
   h+='<h2>职业经历</h2>';
   EXP.forEach(function(e){
     h+='<h3>'+e.co+'　<span class="p-yr">'+e.yr+'</span></h3><div class="p-role">'+e.role+' ｜ '+e.stats.map(function(s){return s[0]+' '+s[1];}).join(' · ')+'</div><ul>';
@@ -660,7 +659,7 @@ function buildPrint(){
   VIBE.forEach(function(v){h+='<h3>'+v.t+'　<span class="p-yr">'+v.tag+'</span></h3><ul>';v.detail.forEach(function(p){h+='<li>'+p+'</li>';});h+='</ul>';});
   h+='<h2>教育背景</h2><div class="p-item">某高校 管理科学硕士（2009–2012）｜某高校 测绘工程学士（2005–2009）｜某重点中学（2002–2005）</div>';
   h+='<h2>认证与特质</h2><div class="p-item">腾讯 WorkBuddy 首批 NOVA 大使 ｜ 效率智能体 OPC 从业认证 ｜ MBTI ENTJ ｜ 某高校校友会秘书团成员</div>';
-  h+='<div class="p-foot">本页已隐去姓名、公司等可识别信息，人物形象为匿名示意 · DEVELOPED BY EDDIE · V6.0</div>';
+  h+='<div class="p-foot">本页已隐去公司名称等可识别信息 · DEVELOPED BY EDDIE · V6.0</div>';
   document.getElementById('printAll').innerHTML=h;
 }
 window.addEventListener('beforeprint',buildPrint);
