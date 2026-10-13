@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="jNjs9HP1tLYrCmHZvLADG9">
+<head data-page-node-id="vnbhrjh3YrvWJTAdDJasV1">
+<meta charset="UTF-8" data-page-node-id="41RdcyKSOobGpuHHTD7MGz">
+<meta name="viewport" content="width=device-width, initial-scale=1" data-page-node-id="pGRg3LpwaC2BgnpZ3pBXjB">
+<title>匿名简历 · 资深资产管理 × AI 资管信息化</title>
+<meta name="description" content="某候选人，10 年头部房企资深资产管理经验，现任 A 集团资管及AI数智化负责人。以 AI 重构资管信息化全流程，跨界复合型人才。" data-page-node-id="VF9p3xd7QSyFNlRkynxJzr">
+<style>
+@font-face{font-family:'HarmonyOS Sans SC';font-style:normal;font-weight:400;font-display:swap;src:url(assets/harmonyos-h1.woff2) format('woff2');}
+:root{
+  --forest:#0C352A;
+  --forest-2:#0F4436;
+  --lime:#C7EE6B;
+  --lime-d:#B3E24E;
+  --lime-soft:#E9F6C6;
+  --sans:"Source Han Sans SC","Source Han Sans CN","Noto Sans SC","Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+  --serif:"Source Han Serif SC","Noto Serif SC","Songti SC","STSong",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;}
+body{background:#F7FAF8;color:#0C352A;font-family:var(--sans);font-size:16px;line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+img{display:block;max-width:100%;}
+button{font-family:inherit;}
+.skip{position:absolute;left:-9999px;top:0;background:var(--lime);color:var(--forest);padding:8px 14px;z-index:99;}
+.skip:focus{left:12px;top:12px;}
+
+/* ---------- stage: 一整块底板 ---------- */
+html,body{overflow-x:hidden;}
+.stage{position:relative;max-width:1560px;margin:0 auto;padding:0;
+  display:grid;grid-template-columns:44% minmax(0,1fr);
+  height:100vh;min-height:680px;background:transparent;}
+
+/* ---------- 左栏：办公室窗边场景 + 绿色渐变 ---------- */
+/* 宽屏（>1560px）时向视口左缘延伸填满，不留白条 */
+.ambient{position:absolute;left:calc(50% - 50vw);top:0;width:calc(44% + 50vw - 50%);height:100%;z-index:0;pointer-events:none;
+  background:url("assets/office-window.jpg") center 32%/cover no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,#000 62%,rgba(0,0,0,.55) 82%,transparent 99%);
+  mask-image:linear-gradient(90deg,#000 62%,rgba(0,0,0,.55) 82%,transparent 99%);}
+/* 绿色渐变：顶部轻压、底部沉入墨绿（承载图上白字），右缘随图一起渐隐到浅底 */
+.veil{position:absolute;left:calc(50% - 50vw);top:0;width:calc(44% + 50vw - 50%);height:100%;z-index:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(12,53,42,.16) 0,rgba(12,53,42,.05) 20%,rgba(12,53,42,.12) 46%,rgba(12,53,42,.58) 74%,rgba(12,53,42,.92) 92%,var(--forest) 100%);
+  -webkit-mask-image:linear-gradient(90deg,#000 62%,rgba(0,0,0,.55) 82%,transparent 99%);
+  mask-image:linear-gradient(90deg,#000 62%,rgba(0,0,0,.55) 82%,transparent 99%);}
+
+/* 人物：透明抠图层，压在标题之上形成立体遮挡；边缘柔和投影融入底板 */
+.photo{position:relative;z-index:2;pointer-events:none;overflow:hidden;}
+.photo>img{position:absolute;left:52%;bottom:-2%;transform:translateX(-50%);height:99%;width:auto;max-width:none;
+  filter:drop-shadow(0 18px 42px rgba(5,20,15,.5));}
+.onpic{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:0 40px 30px 14px;pointer-events:auto;}
+.onpic .nm{font-family:var(--sans);font-size:clamp(36px,3.5vw,52px);font-weight:800;line-height:1.15;letter-spacing:.1em;color:#fff;text-shadow:0 2px 18px rgba(5,20,15,.55);}
+.onpic .en{font-size:10.5px;letter-spacing:.24em;color:var(--lime);margin-top:7px;}
+.onpic .rl{font-size:14px;color:rgba(255,255,255,.9);margin-top:11px;line-height:1.6;}
+.onpic .rl i{font-style:normal;color:var(--lime);}
+.nums{display:flex;gap:26px;margin:16px 0 14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16);}
+.nums div b{display:block;font-size:24px;font-weight:600;color:var(--lime);line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.01em;}
+.nums div b small{font-size:12px;margin-left:2px;}
+.nums div span{font-size:11.5px;color:rgba(255,255,255,.55);letter-spacing:.03em;}
+/* 能力项：与数字区同格式（顶部细线 + 粗体大字 + 小字副题），2×2 网格 */
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:13px 24px;margin:0 0 16px;}
+.caps button{display:block;width:100%;text-align:left;background:none;border:none;border-top:1px solid rgba(199,238,107,.5);padding:8px 0 0;cursor:pointer;color:#fff;}
+.caps button b{display:block;font-size:13.5px;font-weight:600;letter-spacing:.02em;line-height:1.4;transition:color .2s;}
+.caps button em{display:block;font-style:normal;font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.03em;margin-top:3px;}
+.caps button:hover b{color:var(--lime);}
+/* 性格特质：迷你雷达图 + 书面化说明 */
+.pers{display:flex;align-items:center;flex-wrap:wrap;gap:6px 16px;margin:0 0 14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:12px 14px;}
+.pers>svg{width:178px;flex:none;}
+.pers .bdg{display:inline-block;font-size:12px;font-weight:600;color:#0C2018;background:var(--lime);border-radius:3px;padding:4px 10px;letter-spacing:.03em;margin-bottom:7px;}
+.pers p{margin:0 0 5px;font-size:11.5px;line-height:1.7;color:rgba(255,255,255,.85);letter-spacing:.02em;}
+.pers p:last-child{margin-bottom:0;}
+.contact{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;}
+.contact a{display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,.8);border-bottom:1px solid rgba(255,255,255,.22);padding-bottom:2px;transition:color .2s,border-color .2s;}
+.contact .ci{width:14px;height:14px;flex:none;}
+.contact a:hover{color:var(--lime);border-color:var(--lime);}
+
+/* 主标题：整体置于右栏上方，左缘与下方内容卡片对齐 */
+.headline{position:absolute;top:0;left:calc(44% + 30px);right:0;z-index:1;padding:44px 34px 0 0;pointer-events:none;}
+.headline h1{font-family:'HarmonyOS Sans SC',var(--sans);font-weight:400;font-size:clamp(21px,2.15vw,32px);line-height:1.46;letter-spacing:.025em;color:#0C352A;text-shadow:0 1px 14px rgba(247,250,248,.55);}
+.headline h1 em{font-style:normal;color:#0A6B45;}
+.headline .tags{display:flex;gap:9px;margin-top:12px;flex-wrap:wrap;}
+.headline .tags i{font-style:normal;font-size:11.5px;color:#0A6B45;border:1px solid rgba(10,107,69,.32);padding:4px 11px;letter-spacing:.03em;background:rgba(255,255,255,.5);}
+/* 右侧内容 */
+.content{position:relative;z-index:2;padding:212px 34px 30px 30px;display:flex;flex-direction:column;gap:22px;min-height:0;}
+.sec-hd{display:flex;align-items:baseline;gap:10px;}
+.sec-hd .no{font-size:11px;letter-spacing:.18em;color:#0A6B45;font-weight:600;}
+.sec-hd h2{font-family:var(--serif);font-size:16px;font-weight:600;letter-spacing:.03em;}
+.sec-hd p{font-size:12px;color:rgba(12,53,42,.45);margin-left:auto;}
+.sec-hd button{font-size:12px;font-weight:600;color:#fff;background:#0C352A;padding:5px 14px;cursor:pointer;margin-left:auto;border-radius:999px;
+  border:1px solid #0C352A;box-shadow:0 4px 14px rgba(12,53,42,.18);
+  transition:background .2s,border-color .2s,transform .2s;}
+.sec-hd button:hover{background:#0A2B22;border-color:#0A2B22;transform:translateY(-1px);}
+
+.exp-grid{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:minmax(0,1fr);gap:14px;}
+.ecard{position:relative;text-align:left;padding:16px 16px 14px;cursor:pointer;color:var(--forest);display:flex;flex-direction:column;transition:background .24s,border-color .24s,transform .24s,box-shadow .24s;
+  background:#fff;border:1px solid #E4EDE7;border-radius:14px;box-shadow:0 2px 10px rgba(12,53,42,.06);}
+.ecard:hover{background:#fff;border-color:#9FD4B5;transform:translateY(-3px);box-shadow:0 12px 28px rgba(12,53,42,.12);}
+.ecard .yr{font-size:11px;color:rgba(12,53,42,.55);letter-spacing:.04em;font-variant-numeric:tabular-nums;}
+.ecard .hd{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin:5px 0 0;}
+.ecard .co{font-size:15.5px;font-weight:600;line-height:1.35;letter-spacing:.01em;}
+.ecard .rl{font-size:11.5px;color:#0A6B45;font-weight:600;}
+.ecard .pt{font-size:12px;color:rgba(12,53,42,.74);line-height:1.68;margin-top:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+/* 展开icon：悬浮卡片右上角；关键词行单行沉底 */
+.ecard .kw{display:flex;flex-wrap:nowrap;gap:5px;margin-top:auto;padding-top:12px;overflow:hidden;}
+.ecard .kw i{font-style:normal;font-size:11px;color:#0A6B45;background:rgba(10,107,69,.07);border:1px solid rgba(10,107,69,.2);border-radius:3px;padding:3px 7px;letter-spacing:.02em;line-height:1;white-space:nowrap;flex:none;}
+/* 经历卡照片 topbar：仅顶部条带有背景图，下部保持白底 */
+.ecard{overflow:hidden;}
+/* 详情面板顶栏：纯墨绿（照片背景方案已按用户要求撤销） */
+/* 右上角水印：浅灰纯平 Fortune 500 徽章、压在内容底层（z0），文字 z1 在其上 */
+.ecard .mark{position:absolute;right:9px;top:9px;z-index:2;pointer-events:auto;}
+.ecard .mark .g{display:flex;align-items:center;justify-content:center;position:relative;}
+.ecard .mark img{height:30px;max-width:36px;object-fit:contain;opacity:.85;}
+.ecard .mark .ms{transition:opacity .25s;}
+.ecard .mark .mg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:0;transition:opacity .25s;pointer-events:none;}
+.ecard .mark:hover .ms{opacity:0;}
+.ecard .mark:hover .mg{opacity:1;}
+.ecard .yr,.ecard .hd,.ecard .pt,.ecard .kw{position:relative;z-index:1;}
+/* 关键词行沉底；水印已按用户要求移除 */
+
+.vibe-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.vcard{text-align:left;padding:15px 15px;cursor:pointer;color:var(--forest);transition:background .24s,border-color .24s,transform .24s,box-shadow .24s;
+  background:#fff;border:1px solid #E4EDE7;border-radius:14px;box-shadow:0 2px 10px rgba(12,53,42,.06);}
+.vcard:hover{background:#fff;border-color:#9FD4B5;transform:translateY(-3px);box-shadow:0 12px 28px rgba(12,53,42,.12);}
+.vcard .vt{font-size:10.5px;letter-spacing:.14em;color:#0A6B45;font-weight:600;}
+.vcard h3{font-size:13.5px;font-weight:600;line-height:1.45;margin:5px 0 4px;}
+.vcard p{font-size:11.5px;color:rgba(12,53,42,.72);line-height:1.6;}
+.vcard.add{background:rgba(12,53,42,.028);
+  border:1px dashed rgba(12,53,42,.32);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:rgba(12,53,42,.6);box-shadow:none;}
+.vcard.add:hover{color:var(--forest);border-color:rgba(12,53,42,.6);background:rgba(12,53,42,.06);}
+.vcard.add .plus{font-size:18px;line-height:1;}
+.vcard.add span{font-size:12px;}
+
+/* ---------- modal ---------- */
+.mask{position:fixed;inset:0;background:rgba(6,22,17,.62);opacity:0;pointer-events:none;transition:opacity .28s;z-index:60;}
+.mask.on{opacity:1;pointer-events:auto;}
+@media (min-width:861px){.mask{display:none;}}
+/* 详情面板：桌面端停靠右栏内部（撑满整列、与版面一体，无浮窗无遮罩）；手机端回退居中弹窗 */
+.modal{position:absolute;inset:0;z-index:40;background:#F7FAF8;color:var(--ink,#132019);display:flex;flex-direction:column;opacity:0;pointer-events:none;transform:translateX(18px);transition:opacity .28s,transform .28s;}
+.modal.on{opacity:1;pointer-events:auto;transform:none;}
+.mo-top{flex:0 0 auto;background:var(--forest);color:#fff;padding:14px 22px;display:flex;align-items:center;gap:14px;}
+.mo-top .k{font-size:10.5px;letter-spacing:.2em;color:var(--lime);}
+.mo-top h3{font-family:var(--serif);font-size:20px;font-weight:600;line-height:1.3;margin-top:2px;}
+.mo-sub{font-size:12.5px;color:rgba(255,255,255,.78);margin-top:3px;letter-spacing:.03em;}
+.mo-sub:empty{display:none;}
+.mo-close{margin-left:auto;flex:0 0 32px;width:32px;height:32px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;cursor:pointer;font-size:14px;line-height:1;}
+.mo-close:hover{border-color:var(--lime);color:var(--lime);}
+.mo-bd{padding:24px 26px 30px;overflow-y:auto;color:#132019;-webkit-overflow-scrolling:touch;}
+.blk+.blk{margin-top:26px;padding-top:22px;border-top:1px solid var(--line,#E1E9E3);}
+.blk-h{font-size:11.5px;letter-spacing:.18em;color:#7B8A81;margin-bottom:12px;}
+.blk .yr{font-size:12.5px;color:#7B8A81;letter-spacing:.04em;font-variant-numeric:tabular-nums;}
+.blk h4{font-family:var(--serif);font-size:22px;font-weight:600;margin:6px 0 4px;line-height:1.3;color:#132019;}
+.blk .role{font-size:14.5px;color:var(--forest);font-weight:600;}
+.blk .meta{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 16px;}
+.blk .meta i{font-style:normal;font-size:12px;color:var(--forest);background:var(--lime-soft);padding:4px 10px;}
+.blk ul li{font-size:14.5px;color:#45564D;line-height:1.9;padding-left:18px;position:relative;margin-bottom:10px;}
+.blk ul li::before{content:"";position:absolute;left:0;top:12px;width:9px;height:1.5px;background:var(--forest);}
+.blk .note{background:#F2F7F3;border:1px solid #E1E9E3;padding:16px 18px;margin-top:16px;}
+.blk .note p{font-size:14px;color:#45564D;line-height:1.9;}
+.ckli{display:flex;gap:10px;font-size:14.5px;color:#45564D;line-height:1.85;margin-bottom:9px;}
+.ckli i{flex:0 0 17px;width:17px;height:17px;border:1.5px solid var(--forest);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--forest);font-style:normal;margin-top:4px;}
+.mo-nav{display:flex;justify-content:space-between;gap:12px;margin-top:28px;padding-top:20px;border-top:1px solid #E1E9E3;}
+.mo-nav button{border:1px solid #E1E9E3;background:none;padding:9px 15px;font-size:13px;color:#45564D;cursor:pointer;}
+.mo-nav button:hover:not(:disabled){border-color:var(--forest);color:var(--forest);}
+.mo-nav button:disabled{opacity:.4;cursor:default;}
+/* ---------- 方案A 档案双栏：左职责（青柠圆点+短标题）右档案侧栏（mo-grid，避开首页 .exp-grid） ---------- */
+.mo-grid{display:grid;grid-template-columns:minmax(0,1fr) 178px;gap:26px;align-items:start;}
+.dpt{display:flex;gap:11px;margin-bottom:12px;}
+.dpt:last-child{margin-bottom:0;}
+.dpt>i{flex:0 0 8px;width:8px;height:8px;border-radius:50%;background:var(--lime,#C7EE6B);border:1.5px solid var(--forest,#0C352A);margin-top:6px;}
+.dpt b{display:block;font-size:14px;font-weight:700;color:var(--forest,#0C352A);letter-spacing:.01em;}
+.dpt span{display:block;font-size:12.5px;color:#45564D;line-height:1.7;margin-top:2px;}
+.exp-side{border-left:1px solid #E1E9E3;padding-left:18px;}
+.exp-side .stat{margin-bottom:12px;}
+.exp-side .stat b{display:block;font-size:22px;font-weight:800;color:var(--forest,#0C352A);font-variant-numeric:tabular-nums;line-height:1.15;}
+.exp-side .stat span{font-size:10.5px;color:#7B8A81;letter-spacing:.05em;}
+.side-kw{display:flex;flex-wrap:wrap;gap:5px;}
+.side-kw i{font-style:normal;font-size:11px;color:#0A6B45;background:rgba(10,107,69,.07);border:1px solid rgba(10,107,69,.2);border-radius:3px;padding:3px 7px;white-space:nowrap;}
+.side-nav{display:flex;flex-direction:column;gap:7px;margin-top:16px;padding-top:14px;border-top:1px solid #E1E9E3;}
+.side-nav button{border:1px solid #E1E9E3;background:none;padding:8px 10px;font-size:12px;color:#45564D;cursor:pointer;text-align:left;}
+.side-nav button:hover:not(:disabled){border-color:var(--forest,#0C352A);color:var(--forest,#0C352A);}
+.side-nav button:disabled{opacity:.4;cursor:default;}
+@media (max-width:860px){
+  .mo-grid{grid-template-columns:1fr;gap:14px;}
+  .exp-side{border-left:none;padding-left:0;border-top:1px solid #E1E9E3;padding-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-items:end;}
+  .exp-side .blk-h{grid-column:1/-1;margin-bottom:2px;}
+  .exp-side .stat{margin-bottom:0;}
+  .side-kw{grid-column:1/-1;}
+  .side-nav{grid-column:1/-1;flex-direction:row;margin-top:2px;}
+}
+.mo-edu{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid #E1E9E3;}
+.mo-edu b{font-size:15.5px;}
+.mo-edu span{display:block;font-size:13.5px;color:#7B8A81;margin-top:2px;}
+.mo-edu i{font-style:normal;font-size:13px;color:var(--forest);font-variant-numeric:tabular-nums;}
+.chips{display:flex;flex-wrap:wrap;gap:9px;}
+.chips i{font-style:normal;font-size:13px;color:#45564D;border:1px solid #E1E9E3;padding:6px 13px;}
+.chips i.g{border-color:var(--forest);color:var(--forest);background:var(--lime-soft);}
+
+/* ---------- motion ---------- */
+@keyframes riseIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.anim{opacity:0;animation:riseIn .55s cubic-bezier(.2,.6,.2,1) forwards}
+.photo.anim{animation:fadeIn .8s ease forwards}
+@media (prefers-reduced-motion:reduce){
+  .anim{animation:none;opacity:1}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1240px){
+  .stage{grid-template-columns:42% minmax(0,1fr);}
+  .content{padding-top:210px;}
+  .headline{left:calc(42% + 30px);}
+}
+@media (max-width:1080px){
+  .stage{grid-template-columns:1fr;grid-template-rows:none;height:auto;min-height:0;padding-bottom:26px;}
+  .ambient,.veil{width:100%;height:72vh;
+    -webkit-mask-image:none;mask-image:none;}
+  .ambient{background-position:center 30%;}
+  .veil{background:linear-gradient(180deg,rgba(12,53,42,.30) 0,rgba(12,53,42,.08) 24%,rgba(12,53,42,.40) 58%,rgba(12,53,42,.82) 80%,var(--forest) 100%);}
+  .photo{min-height:70vh;}
+  .photo>img{left:50%;height:100%;bottom:0;transform:translateX(-50%);}
+  .content{position:relative;padding:26px;}
+  .content::before{content:"";position:absolute;left:0;top:0;right:0;height:64px;
+    background:linear-gradient(180deg,var(--forest) 0,rgba(12,53,42,0) 100%);pointer-events:none;}
+  .headline{position:relative;left:auto;right:auto;padding:22px 26px 0;}
+  .content{padding:26px;}
+  .exp-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:860px){
+  .onpic{padding:0 22px 24px;}
+  .headline{padding:18px 22px 0;}
+  .content{padding:20px 22px 26px;}
+  .exp-grid{grid-template-columns:1fr;}
+  .vibe-grid{grid-template-columns:1fr;}
+  .nums{gap:18px;}
+  .modal{position:fixed;inset:auto;left:50%;top:50%;transform:translate(-50%,-46%) scale(.985);width:calc(100vw - 20px);max-height:calc(100vh - 40px);background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.3);border-radius:14px;}
+  .modal.on{transform:translate(-50%,-50%) scale(1);}
+  .mo-bd{padding:20px 18px 26px;}
+  .mo-top{padding:12px 16px;}
+}
+
+/* ---------- print ---------- */
+.print-only{display:none;}
+@media print{
+  .stage,.mask,.modal{display:none !important;}
+  body{background:#fff;color:#111;}
+  .print-only{display:block;padding:0 8mm;}
+  .print-only h1{font-family:var(--serif);font-size:22px;margin:0 0 4px;}
+  .print-only .p-sub{font-size:12px;color:#555;margin-bottom:14px;}
+  .print-only h2{font-family:var(--serif);font-size:16px;margin:18px 0 8px;padding-bottom:5px;border-bottom:1px solid #ccc;}
+  .print-only h3{font-size:14px;margin:12px 0 4px;}
+  .print-only .p-yr{font-size:11.5px;color:#666;}
+  .print-only .p-role{font-size:12.5px;font-weight:600;margin-bottom:5px;}
+  .print-only ul li{font-size:12px;line-height:1.7;margin-bottom:4px;padding-left:14px;position:relative;}
+  .print-only ul li::before{content:"–";position:absolute;left:0;}
+  .print-only .p-item{margin-bottom:6px;font-size:12px;}
+  .print-only .p-item b{font-weight:600;}
+  .print-only .p-foot{margin-top:16px;font-size:10.5px;color:#888;border-top:1px solid #ddd;padding-top:8px;}
+}
+</style>
+</head>
+<body data-page-node-id="azD6Z7En3eGBMZMbuxkTRr">
+<a class="skip" href="#main" data-page-node-id="YkVuDyq6tie9MUlLuohXxW">跳到主要内容</a>
+
+<main class="stage" id="main" data-page-node-id="BXjMS3qcXQ33iNkw0lHiYX">
+
+  <div class="ambient" aria-hidden="true" data-page-node-id="1k4PViiBVWLzsyEBdRQgiu"></div>
+  <div class="veil" aria-hidden="true" data-page-node-id="bTyNbM19GyQGKhCydNsrBJ"></div>
+
+  <!-- 人物：透明层，压在标题之上 -->
+  <div class="photo" data-page-node-id="wlBVvDC5JAoNxcizE7mEtP">
+    <img src="assets/hero-anon.png" alt="匿名形象示意" width="826" height="1400" data-page-node-id="T1Q9wWx7gDLQfWdbG4fFNg">
+    <div class="onpic" data-page-node-id="VOmESC6bYYe2KUpcuARP4R">
+      <div class="nm" data-page-node-id="Dya29DL1BsYjbIC3BrB1XT">匿名候选人</div>
+      <div class="en" data-page-node-id="lLt8oMK0P7iCa57aZXfb9G">ANONYMIZED</div>
+      <div class="rl" data-page-node-id="exLF87MZyuFiGiT7bNAIsH">A 集团 · <i data-page-node-id="wi78nQGXHx01urW9sll26T">资管及AI数智化负责人</i></div>
+      <div class="nums" data-page-node-id="E3nFR2skaDjKWSDmRakX3T">
+        <div data-page-node-id="e0Rvsx6AmqJEuprrCxqqTs"><b data-page-node-id="1XCFGqNWpLGobD4fwHz2Gh"><span class="cu" data-to="200" data-page-node-id="GRTqhKPrxXU4POgxBLp0uG">200</span><small data-page-node-id="exhzH7nFayku72Kq9fbiZK">亿</small></b><span data-page-node-id="QM4CQX0nfnMLAJPHUoAPTR">现管规模</span></div>
+        <div data-page-node-id="XRdrYZzEScGh4Ep4RrBusV"><b data-page-node-id="XrLoPiXnUSSip89ibXP35R"><span class="cu" data-to="600" data-page-node-id="Mg9u2A9gfgZzaBe2zOVEjM">600</span><small data-page-node-id="CQ9KiHOosbHz10s76YMLEi">亿</small></b><span data-page-node-id="yGwd2g4mVEExEW6sj6b751">曾统筹</span></div>
+        <div data-page-node-id="wtAoJa84GE5NvdfrnGbMoG"><b data-page-node-id="LcSY9EC7noqKg2vQevPus6"><span class="cu" data-to="10" data-page-node-id="H8vZZRrwwS80hlLc6UlpuE">10</span><small data-page-node-id="uKwE7GETT8scHIIoeVE6Nh">年</small></b><span data-page-node-id="SulbiqpBfH9IpigoEHEanv">资管年限</span></div>
+      </div>
+      <div class="caps" id="capList" data-page-node-id="pKOcCJmZrGCiAGl4kuLSB0"></div>
+      <div class="pers">
+        <svg viewBox="-28 0 266 170" role="img" aria-label="性格特质雷达图">
+          <g stroke="rgba(255,255,255,.22)" fill="none">
+            <polygon points="105,15 173,55 153,135 57,135 37,55"/>
+            <polygon points="105,45 146,70 133,115 77,115 64,70"/>
+            <line x1="105" y1="85" x2="105" y2="15"/><line x1="105" y1="85" x2="173" y2="55"/><line x1="105" y1="85" x2="153" y2="135"/><line x1="105" y1="85" x2="57" y2="135"/><line x1="105" y1="85" x2="37" y2="55"/>
+          </g>
+          <polygon points="105,20 167,58 143,126 65,130 45,58" fill="rgba(199,238,107,.22)" stroke="#C7EE6B" stroke-width="1.5"/>
+          <g fill="#C7EE6B"><circle cx="105" cy="20" r="2.5"/><circle cx="167" cy="58" r="2.5"/><circle cx="143" cy="126" r="2.5"/><circle cx="65" cy="130" r="2.5"/><circle cx="45" cy="58" r="2.5"/></g>
+          <g fill="rgba(255,255,255,.92)" font-size="12.5" font-family="-apple-system,'PingFang SC','Noto Sans SC',sans-serif">
+            <text x="105" y="10" text-anchor="middle">表达主持</text>
+            <text x="177" y="52">沟通协调</text>
+            <text x="153" y="151" text-anchor="middle">资源撮合</text>
+            <text x="57" y="151" text-anchor="middle">跨界协作</text>
+            <text x="33" y="52" text-anchor="end">逻辑分析</text>
+          </g>
+        </svg>
+        <div class="pers-tx">
+          <span class="bdg">ENTJ 指挥官型</span>
+          <p>善于有效沟通，迅速把握问题要点，针对性提出解决方案</p>
+          <p>长于框架性梳理，细化行动步骤，多维度验证可行性</p>
+          <p>跨行业跨部门协作，促成信息撮合；多次参加各种公开演讲</p>
+        </div>
+      </div>
+      <div class="contact" data-page-node-id="UGciBmThCcVbNl0kmrMB5Z">
+        <a href="#" data-page-node-id="lEnSNMVOB7uBPSeBZjpGaQ"><svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>联系邮箱已隐藏</a>
+        <a href="#"><svg class="ci" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>社交主页已隐藏</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主标题：压在图上 -->
+  <div class="headline" data-page-node-id="a0Td85yRQJgrqy7bHu8RWo">
+    <h1 data-page-node-id="6wm28I1GmaCOFGDnsfiik1">十年资深资产管理，<br data-page-node-id="V6tMdAHOL9L8UZ5WmtgRLL">用 <em data-page-node-id="DLEs4HpHGb8GMvB9gssBoI">AI</em> 重做一遍 ——<br data-page-node-id="SI9ggtgpXqChE6ZzT7qWx0">打造资管信息化<em data-page-node-id="l4a7kKeYucteJruX5l97bO">全流程管理</em>的跨界复合人才</h1>
+    <div class="tags" data-page-node-id="1ywJMTaxUpss7DfqH7DUgf">
+      <i data-page-node-id="HedmMB1IUO0AqiISdVvZsN">某高校校友会副秘书长</i><i data-page-node-id="8VuaGMPgpYxRH55OnjoQZk">腾讯 WorkBuddy 首批 NOVA 大使</i><i data-page-node-id="5f48k6lO8MLEA7enhjcx3y">Agent 智能体 OPC 从业认证</i>
+    </div>
+  </div>
+
+  <!-- 右侧：经历 + vibe coding -->
+  <div class="content" data-page-node-id="AYBFksidERLyE2KY1Z1Skp">
+    <div data-page-node-id="V0DDta0SPQ7Fu3CAXjpulW">
+      <div class="sec-hd" data-page-node-id="eY7SmIpFhO3BDQObK4f1qz">
+        <span class="no" data-page-node-id="PzDSF5T7kmm3NuOzwg2oH0">01</span><h2 data-page-node-id="wZdheJGRlP6OFkMRayOovf">职业经历</h2>
+        <button data-k="exp" data-i="0" data-page-node-id="iTs3hETIa7dUKPh4iUB88r">查看经历详情 →</button>
+      </div>
+      <div class="exp-grid" id="expList" style="margin-top:12px;" data-page-node-id="jActbJ5ySoRfLA5dbZ1nl1"></div>
+    </div>
+    <div data-page-node-id="fn7Xcdq1Rlj1Idq7Cf2VFb">
+      <div class="sec-hd" data-page-node-id="wuXNpJ7lOnqNDd6HQuZBVO">
+        <span class="no" data-page-node-id="VxXEZc3R0JFFDUEH2xx2aF">02</span><h2 data-page-node-id="afKEskSNJDR97VLsX8jKCh">AI 数智化案例｜公司业务流程优化</h2>
+        <button data-all="vibe" data-page-node-id="0sRYJTs7lsPLDExmLAJUiI">全部展开 →</button>
+      </div>
+      <div class="vibe-grid" id="vibeList" style="margin-top:12px;" data-page-node-id="BjHSc7T529gtjFHYwrFU3u"></div>
+    </div>
+  </div>
+
+</main>
+
+<div class="mask" id="mask" data-page-node-id="AlN1iKPFBo86fvTSjDFm8N"></div>
+<section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="moTitle" aria-hidden="true" data-page-node-id="RequejtYQSnkbJhA75qfzf">
+  <div class="mo-top" data-page-node-id="z9OQR0rsekfv1M6zTc2mI6">
+    <div data-page-node-id="sQS9I9ZMXJzDEo1oEHHqA5">
+      <div class="k" id="moKicker" data-page-node-id="3TL4VOgVGoeQSboSUmPhN9">MODULE</div>
+      <h3 id="moTitle" data-page-node-id="gdnsmwWv8nCjPIx0J2t7ym">标题</h3>
+      <div class="mo-sub" id="moSub"></div>
+    </div>
+    <button class="mo-close" id="moClose" aria-label="关闭" data-page-node-id="KBiPN1ROBY3EHnMq6FdeYm">✕</button>
+  </div>
+  <div class="mo-bd" id="moBody" data-page-node-id="KcSRAiwaBrDcHrZxbss4El"></div>
+</section>
+
+<div class="print-only" id="printAll" data-page-node-id="IQS3cuYMEBXdF44sYziOT7"></div>
+
+<script>
+(function(){
+/* ================= 数据 ================= */
+var EXP=[
+ {yr:"2024.06 — 至今",co:"A 集团",mark:"assets/marks/fortune.png",role:"资管及AI数智化负责人",
+  stats:[["200亿","在管资产规模"],["6 城","在管城市"],["4 大","核心业态"]],
+  brief:"统筹约 200 亿资产及商办、商业、长租、康养四大业态；牵头公司级资管运营体系与筹开节点管控；以 AI 自建经营数据驾驶舱，实现多源数据自动抽取与智能诊断。",
+  kw:["资管体系","筹开管控","AI 驾驶舱"],
+  dp:[["资管体系","牵头搭建公司级资管运营体系，完善「投—融—管—退」制度标准，推动经验驱动转向标准化、精细化。"],
+      ["筹开管控","统筹在营及筹开项目全周期：项目定位、年度经营预算、KPI 考核跟踪与节点强排。"],
+      ["投后全案","重点项目股权交割、接管计划铺排、合规披露与履约风险预警，保障合作方权益与品牌安全。"],
+      ["AI 驾驶舱","以 AI 自主搭建经营数据可视化驾驶舱，打通业务 / 财务 / 会员多源数据，实时支撑管理层决策。"],
+      ["梯队带教","担任储备项目总带教，以实战陪跑与 SOP 沉淀，孵化项目负责人梯队。"]],
+  proj:"① 滨海微度假商业项目　② 城市微公园式商业项目　③ 沉浸式文旅项目"},
+
+ {yr:"2021.08 — 2024.06",co:"B 集团",mark:"assets/marks/fortune.png",role:"资产管理与配置总监",
+  stats:[["600亿","在管资产规模"],["12 城","城市公司"],["80+","自持商办项目"]],
+  brief:"统筹 12 城 80 余个自持商办项目、约 600 亿规模；覆盖投资研判、租赁策略、预算考核全流程；主导行业研究与资源整合，助力上海某城市更新商业项目成功开业。",
+  kw:["全流程资管","行业研究","资源整合"],
+  dp:[["全流程资管","统筹华东区域 12 个城市公司合计 80 余个自持商办项目：投资研判与出清决策、产标定位与租赁策略、全年经营预算及考核跟踪、筹开计划运营管控。"],
+      ["行业研究","商办市场 / 客户 / 行业项目研究，为商用业务发展提供数据支持；输出产品优化与趋势预判，支撑产品定位、租赁策略、推广方案与股权退出决策。"],
+      ["资源统筹","负责区域内外部资源统筹与链接：办公及商业租户资源整理拉通、重要外部合作方收集与落地推进、各业务单元信息资源共享。"],
+      ["平台运营","负责区域公司商业项目平台运营，牵头年度消费者与租户满意度调研及平台巡检，制定下一年度经营整改方案。"],
+      ["筹开开业","负责某上海城市更新商业项目筹开，成功助力项目开业并完成后期媒体宣发。"],
+      ["成果与攻坚","获集团 2022 年度奋斗之星；预算管理与过程管控累计降本 4000 万、资产 NOI 率提升至 6%；以资管视角攻坚：三城攻坚：保函解活、定位纠偏、组织重构。"]]},
+
+ {yr:"2019.04 — 2021.07",co:"创业经历",role:"品牌创始人 · 实体门店",
+  stats:[["3 年","独立经营"],["1 家","核心商圈购物中心首店"],["4+","知名商业进驻 offer"]],
+  brief:"独立经营核心商圈购物中心实体门店三年，贯通选址、营销、品牌、财务全链条；从甲方视角切换到经营者视角，建立单店盈利模型的真实经营体感。",
+  kw:["全链条经营","单店盈利模型"],
+  dp:[["合伙创业","负责品牌前期市场调研、合伙人股权分配与权责界面制定；主导前期投资测算与后期运营管控。"],
+      ["财务运营","负责公司日常财务运营：收支管理、资产核算盘点、股东分红；统筹采购渠道与价格管理，实现降本增效。"],
+      ["商务拓展","对接外部商务合作，拟定商务合作模式，扩大项目经营类目与消费群体。"],
+      ["数字化提效","搭建门店全部线上系统与表单并统一管理，以数据分析驱动整体运营效率提升。"],
+      ["成果与沉淀","首店成功落地核心商圈购物中心 2F，并获多家知名商业项目进驻 offer；疫情下及时调整发展策略，锤炼抗风险能力与快速学习能力。"]]},
+
+ {yr:"2016.04 — 2018.11",co:"C 集团",mark:"assets/marks/fortune.png",role:"资产管理资深经理",
+  stats:[["100亿","轻资产包投后"],["60+","项目研策"],["200+","广场年度盘点"]],
+  brief:"负责近 60 个项目研策与约 100 亿轻资产包投后；覆盖投资测算、租决编制、预算审核与季度收益披露，完成投资款结算与财务风险预警。",
+  kw:["投资测算","资产包投后","运营管控"],
+  dp:[["投资调研","负责大型商业综合体整体选址调研，以商业可行性角度撰写立项调研报告；在职期间积累近 60 余个项目研策经历与丰富选址经验。"],
+      ["投资测算","负责拟发展项目投资回报率测算，依测算结果优化并跟踪输入条件；已开业项目回报率核定，提高可研测算精度。"],
+      ["运营管控","编制筹备期及运营期租决文件、制定三年经营指标；成熟期年度预算编制及审核；审核大面积招商调整方案，确保租金增长率达标，定期向集团汇报经营调研。"],
+      ["资产包管理","负责集团轻资产项目投后：配合股权交割、按工程进度提交资金需求计划并完成投资款结算；季度收益与经营信息披露；监控项目公司财务并预警风险，配合投资人资金监管。"],
+      ["专项研究","参与 2016/2017 年度资管报告（全面盘点 200 余家商业项目经营收益与资产价值提升空间）、资产证券化研究、文旅项目后评价、大数据选址应用与城市分级研究。"]]},
+
+ {yr:"2015.05 — 2016.04",co:"D 集团",mark:"assets/marks/fortune.png",role:"招商运营经理",
+  stats:[["90%","开业率"],["3 类","餐饮 / 家居 / 创新业态"],["首店","多个北京「首店」招商"]],
+  brief:"负责某都市微度假街区项目二期餐饮、家居及创新业态招商，引入首店业态；配合租户进场与开业活动，项目如期开业、开业率 90%。",
+  kw:["品牌招商","筹开开业"],
+  dp:[["品牌招商","负责某都市微度假街区项目二期筹开的餐饮、家居、创新业态品牌招商，项目于 2016 年 5 月正式开业。"],
+      ["租务协调","配合运营部安排租户进场、复尺、出图等 TC 前期工作。"],
+      ["推广配合","负责开业前招商成果发布会的策划组织，配合二期开业活动。"],
+      ["招商成果","完成二期创新业态全部招商，开业率 90%；成功完成多个北京「首店」招商任务及多个品牌签约入驻。"]]},
+
+ {yr:"2012.06 — 2015.05",co:"E 集团",mark:"assets/marks/fortune.png",role:"管培生 · 招商运营岗",
+  stats:[["10+","综合体投资选址"],["1 套","标准租赁文件体系"],["多城","影院等重点业态签约"]],
+  brief:"参与总部战略招商与 10 余个综合体投资选址，完成影院等重点业态签约；主导标准租赁文件编制与商业制度体系搭建，建立商业管理 SOP 思维体系。",
+  kw:["战略招商","投资选址","标准化体系"],
+  dp:[["总部招商","负责商业总部战略品牌招商及客户关系维护，重点对接影院、儿童游乐、大餐等业态在各综合体的落地，完成招商策略计划及租金测算。"],
+      ["投资选址","负责商业总部投资选址与项目盘点，参与 10 余个综合体投资选址，配合各项目规划设计。"],
+      ["商业研究","参与轻资产商业产品线研究、百货改造等商业相关研究工作。"],
+      ["标准化体系","负责集团所有项目标准租赁文件的编制及商业制度体系搭建。"],
+      ["关键成果","完成多个综合体影院签约；参与轻资产商业产品线研究与总部租赁文件标准化模板编制；建立商业管理 SOP 思维体系。"]]}
+];
+
+var CAP=[
+ {t:"投前研判与投资测算",d:"选址调研 · 立项报告 · 回报率核定",
+  pts:["以商业可行性视角撰写立项调研报告，为项目获取提供决策依据","拟发展项目投资回报率测算并跟踪优化输入条件；已开业项目回报率核定，提高可研精度","参与 10 余个综合体投资选址、近 60 余个大型商业综合体项目研策"],
+  rel:"对应经历：E 集团 · C 集团"},
+ {t:"筹开与全周期运营",d:"定位 · 节点强排 · 租决 · 预算考核",
+  pts:["主导筹开项目关键节点：项目定位、年度经营预算编制、KPI 考核跟踪及节点强排","编制筹备期及运营期租决文件，制定三年经营指标","审核大面积招商调整方案，确保租金增长率达标"],
+  rel:"对应经历：A 集团 · B 集团 · D 集团"},
+ {t:"投后管理与风险控制",d:"股权交割 · 接管铺排 · 披露 · 预警",
+  pts:["重点项目投后全案管控：股权交割落地、接管计划铺排、合规信息披露及履约风险预警","按工程进度提交资金需求计划并完成投资款结算；按季度进行收益与经营信息披露","监控项目公司财务工作、预警财务风险，配合投资人资金监管"],
+  rel:"对应经历：A 集团 · C 集团"},
+ {t:"AI 信息化与体系建设",d:"数据驾驶舱 · 多源打通 · 制度与梯队",
+  pts:["运用 AI 工具自主搭建经营数据可视化驾驶舱，打通业务、财务及会员多源数据壁垒","实现数据自动抽取与智能诊断，为管理层提供实时决策支撑","牵头公司级资管运营体系与制度标准；担任储备项目总带教，孵化项目负责人梯队"],
+  rel:"对应经历：A 集团"}
+];
+
+var VIBE=[
+ {t:"经营数据可视化驾驶舱",tag:"AI · 数据打通",d:"打通业务、财务、会员多源数据，自动抽取与智能诊断",status:"已上线自用",
+  detail:["背景：集团经营数据分散在业务、财务、会员多个系统，月度经营分析依赖人工取数汇总。",
+          "做法：用 AI 工具自主搭建可视化驾驶舱，把多源数据打通，做到数据自动抽取 + 异常智能诊断。",
+          "结果：管理层可实时查看经营全貌，不再等人工报表；为预算跟踪与 KPI 考核提供统一口径。",
+          "技术：自然语言描述需求 → AI 生成代码 → 本地迭代，全程无 IT 排期介入。"]},
+ {t:"一铺一价收入测算工具",tag:"AI · 测算模型",d:"按铺位维度做收入测算，支撑租金决策与招商谈判",status:"已上线自用",
+  detail:["背景：商业项目定价需要按铺位逐户测算，表格版本反复改、易出错。",
+          "做法：做成轻量 Web 工具，输入铺位参数即可输出测算结果与对比方案。",
+          "结果：测算口径统一，招商与资管共用一套模型，谈判效率提升。"]},
+ {t:"筹开项目节点跟踪系统",tag:"AI · 流程管控",d:"里程碑 / 四级节点管控，节点自带审批 URL 便于流程对接",status:"已上线自用",
+  detail:["背景：筹开项目节点多、跨部门，靠表格跟踪容易漏项与延期。",
+          "做法：搭建节点跟踪工具，按里程碑—地产一级—区域二级—项目三级四层管控，每个节点记录审批 URL。",
+          "结果：节点状态（已完成 / 进行中 / 临期 / 已逾期）一目了然，为后续接外部审批流预留接口。"]}
+];
+
+/* ================= 渲染 ================= */
+var expList=document.getElementById('expList');
+EXP.forEach(function(e,i){
+  var b=document.createElement('button');
+  b.className='ecard';b.dataset.k='exp';b.dataset.i=i;
+  b.innerHTML='<span class="yr">'+e.yr+'</span>'+
+    '<span class="hd"><span class="co">'+e.co+'</span><span class="rl">'+e.role+'</span></span>'+
+    '<span class="pt">'+e.brief+'</span>'+
+    (e.kw?'<span class="kw">'+e.kw.map(function(k){return '<i>'+k+'</i>';}).join('')+'</span>':'')+
+    (e.mark?'<span class="mark"><span class="g"><img class="ms" src="'+e.mark+'" alt="" loading="lazy"><img class="mg" src="assets/marks/fortune-gold.png" alt="" loading="lazy"></span></span>':'');
+  expList.appendChild(b);
+});
+
+var capList=document.getElementById('capList');
+CAP.forEach(function(c,i){
+  var b=document.createElement('button');
+  b.className='pf-cap';b.dataset.k='cap';b.dataset.i=i;
+  b.innerHTML='<b>'+c.t+'</b><em>'+c.d+'</em>';
+  capList.appendChild(b);
+});
+
+var vibeList=document.getElementById('vibeList');
+VIBE.forEach(function(v,i){
+  var b=document.createElement('button');
+  b.className='vcard';b.dataset.k='vibe';b.dataset.i=i;
+  b.innerHTML='<div class="vt">'+v.tag+'</div><h3>'+v.t+'</h3><p>'+v.d+'</p>';
+  vibeList.appendChild(b);
+});
+var add=document.createElement('button');
+add.className='vcard add';add.dataset.k='vibeadd';
+add.innerHTML='<span class="plus">＋</span><span>继续添加案例</span>';
+vibeList.appendChild(add);
+
+/* ================= 弹层 ================= */
+var modal=document.getElementById('modal'),mask=document.getElementById('mask'),
+    moBody=document.getElementById('moBody'),moTitle=document.getElementById('moTitle'),
+    moKicker=document.getElementById('moKicker'),moClose=document.getElementById('moClose');
+if(window.innerWidth>860){try{document.querySelector('.content').appendChild(modal);}catch(e){}}
+var lastFocus=null;
+function el(tag,cls,html){var n=document.createElement(tag);if(cls)n.className=cls;if(html!=null)n.innerHTML=html;return n;}
+
+function blockExp(e,i){
+  var b=el('div','blk');
+  var pts=e.dp.map(function(p){return '<div class="dpt"><i></i><div><b>'+p[0]+'</b><span>'+p[1]+'</span></div></div>';}).join('');
+  var side='<div class="blk-h">关键指标</div>'+
+    e.stats.map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>';}).join('')+
+    (e.kw?'<div class="blk-h" style="margin-top:12px;">关键词</div><div class="side-kw">'+e.kw.map(function(k){return '<i>'+k+'</i>';}).join('')+'</div>':'');
+  var nav='';
+  if(i!=null){
+    var pv=EXP[i-1]?EXP[i-1].co:null, nx=EXP[i+1]?EXP[i+1].co:null;
+    nav='<div class="side-nav"><button data-d="-1"'+(pv?'':' disabled')+'>'+(pv?'← '+pv:'已是第一段')+'</button>'+
+        '<button data-d="1"'+(nx?'':' disabled')+'>'+(nx?nx+' →':'已是最后一段')+'</button></div>';
+  }
+  b.innerHTML='<div class="mo-grid"><div class="exp-main"><div class="blk-h">职责与成果</div>'+pts+
+    (e.proj?'<div class="note" style="margin-top:14px;"><div class="blk-h" style="margin-bottom:6px;">重点在管项目</div><p style="font-size:13px;line-height:1.8;">'+e.proj+'</p></div>':'')+
+    '</div><aside class="exp-side">'+side+nav+'</aside></div>';
+  if(i!=null){
+    Array.prototype.forEach.call(b.querySelectorAll('.side-nav button'),function(btn){
+      btn.onclick=function(){openItem('exp',i+parseInt(btn.getAttribute('data-d'),10));};
+    });
+  }
+  return b;
+}
+function blockCap(c){
+  var b=el('div','blk');
+  b.innerHTML='<h4>'+c.t+'</h4><div class="role">'+c.d+'</div>'+
+    '<div class="blk-h" style="margin-top:16px;">能力要点</div>'+
+    c.pts.map(function(p){return '<div class="ckli"><i>✓</i><span>'+p+'</span></div>';}).join('')+
+    '<div class="note"><p>'+c.rel+'</p></div>';
+  return b;
+}
+function blockVibe(v){
+  var b=el('div','blk');
+  b.innerHTML='<div class="yr">'+v.tag+'</div><h4>'+v.t+'</h4><div class="role">'+v.d+'</div>'+
+    '<div class="blk-h" style="margin-top:16px;">背景 · 做法 · 结果</div><ul>'+
+    v.detail.map(function(p){return '<li>'+p+'</li>';}).join('')+'</ul>'+
+    '<div class="note"><p>状态：'+v.status+'。案例细节持续补充中（截图 / 数据 / 链接待接入）。</p></div>';
+  return b;
+}
+function blockAbout(){
+  var b=el('div','blk');
+  b.innerHTML='<div class="blk-h">个人陈述</div><ul>'+
+   '<li>在<b>五家头部地产与商业集团</b>完成资管全链路训练：从招商运营管培生，到投资选址与回报测算，到 100 亿轻资产包投后，再到统筹 12 城 80 余个自持商办项目。</li>'+
+   '<li>工作方法是<b>先搭框架，再落细节</b>：牵头公司级资管运营体系与「投—融—管—退」制度标准，主导筹开节点强排与年度经营预算。</li>'+
+   '<li>同时是<b>把 AI 用进业务里的人</b>：自主搭建经营数据可视化驾驶舱，打通业务、财务与会员多源数据，实现自动抽取与智能诊断。</li></ul>'+
+   '<div class="blk-h" style="margin-top:22px;">个人特质</div>'+
+   '<div class="ckli"><i>✓</i><span><b>ENTJ 指挥官型</b>：框架化梳理问题，细化行动步骤，多维度验证可行性</span></div>'+
+   '<div class="ckli"><i>✓</i><span><b>沟通表达</b>：形象气质良好，普通话标准，长期担任各类活动主持人</span></div>'+
+   '<div class="ckli"><i>✓</i><span><b>需求撮合</b>：善于探究各方需求，跨行业跨部门协作，以信息采集与规范制定实现撮合</span></div>'+
+   '<div class="blk-h" style="margin-top:22px;">教育背景</div>'+
+   '<div class="mo-edu"><div><b>某高校</b><span>管理科学 · 硕士</span></div><i>2009 — 2012</i></div>'+
+   '<div class="mo-edu"><div><b>某高校</b><span>测绘工程 · 学士</span></div><i>2005 — 2009</i></div>'+
+   '<div class="mo-edu"><div><b>某重点中学</b><span>高中</span></div><i>2002 — 2005</i></div>'+
+   '<div class="chips" style="margin-top:14px;"><i class="g">腾讯 WorkBuddy 首批 NOVA 大使</i><i class="g">效率智能体 OPC 从业认证</i><i>MBTI · ENTJ</i><i>某高校校友会秘书团成员</i></div>';
+  return b;
+}
+
+function openModal(kicker,title,node,sub){
+  moKicker.textContent=kicker;moTitle.textContent=title;
+  document.getElementById('moSub').textContent=sub||'';
+  moBody.innerHTML='';moBody.appendChild(node);
+  modal.classList.add('on');mask.classList.add('on');
+  document.body.classList.add('detail-open');
+  modal.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+  moBody.scrollTop=0;moClose.focus();
+}
+function closeModal(){
+  modal.classList.remove('on');mask.classList.remove('on');
+  document.body.classList.remove('detail-open');
+  modal.setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+  if(lastFocus)lastFocus.focus();
+}
+function openItem(k,i){
+  var wrap=el('div');
+  if(k==='exp'){
+    wrap.appendChild(blockExp(EXP[i],i));
+    openModal('EXPERIENCE · 0'+(i+1),EXP[i].co,wrap,EXP[i].yr+' · '+EXP[i].role);
+  }else if(k==='cap'){
+    wrap.appendChild(blockCap(CAP[i]));
+    openModal('CAPABILITY · 0'+(i+1),CAP[i].t,wrap);
+  }else if(k==='vibe'){
+    wrap.appendChild(blockVibe(VIBE[i]));
+    openModal('VIBE CODING · 0'+(i+1),VIBE[i].t,wrap);
+  }else if(k==='vibeadd'){
+    var b=el('div','blk');
+    b.innerHTML='<div class="blk-h">如何添加新案例</div><ul>'+
+      '<li>准备三项内容：案例名称、一句话说明（解决什么问题）、背景 / 做法 / 结果三段文字，配一张截图更佳。</li>'+
+      '<li>把内容发给我（或直接在对话里描述），我会在 Vibe Coding 模块里新增一张卡片，并接入展开详情。</li>'+
+      '<li>推荐结构：<b>背景痛点 → AI 实现过程 → 业务结果</b>，能量化的尽量量化（节省工时、覆盖率、使用率）。</li></ul>'+
+      '<div class="note"><p>占位卡片已预留，随时可替换成你的真实案例。</p></div>';
+    wrap.appendChild(b);
+    openModal('VIBE CODING','添加案例',wrap);
+  }
+}
+function openAll(k){
+  var wrap=el('div');
+  var sep=function(b,i){if(i>0){b.style.marginTop='26px';b.style.paddingTop='22px';b.style.borderTop='1px solid #E1E9E3';}};
+  if(k==='exp'){
+    EXP.forEach(function(e,i){var b=blockExp(e);sep(b,i);wrap.appendChild(b);});
+    openModal('EXPERIENCE · ALL','职业经历（全部 6 段）',wrap);
+  }else if(k==='cap'){
+    CAP.forEach(function(c,i){var b=blockCap(c);sep(b,i);wrap.appendChild(b);});
+    openModal('CAPABILITY · ALL','核心能力（全部 4 项）',wrap);
+  }else if(k==='vibe'){
+    VIBE.forEach(function(v,i){var b=blockVibe(v);sep(b,i);wrap.appendChild(b);});
+    openModal('VIBE CODING · ALL','案例库（全部 '+VIBE.length+' 个）',wrap);
+  }
+}
+document.addEventListener('click',function(ev){
+  var it=ev.target.closest?ev.target.closest('[data-k]'):null;
+  if(it){lastFocus=it;openItem(it.dataset.k,parseInt(it.dataset.i,10));return;}
+  var al=ev.target.closest?ev.target.closest('[data-all]'):null;
+  if(al){lastFocus=al;openAll(al.dataset.all);}
+});
+mask.addEventListener('click',closeModal);
+moClose.addEventListener('click',closeModal);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('on'))closeModal();});
+
+/* 主标题为绝对定位层，右侧内容按标题实测高度让位 */
+var hl=document.querySelector('.headline'),ct=document.querySelector('.content');
+function syncPad(){
+  if(!hl||!ct)return;
+  if(window.innerWidth>1080){ct.style.paddingTop=(hl.offsetHeight+22)+'px';}
+  else{ct.style.paddingTop='';}
+}
+window.addEventListener('resize',syncPad);
+window.addEventListener('load',syncPad);
+syncPad();
+
+/* ================= 入场与数字动效 ================= */
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){
+  var seq=[document.querySelector('.photo'),document.querySelector('.headline'),document.querySelector('.content')];
+  seq.forEach(function(n,i){if(n){n.classList.add('anim');n.style.animationDelay=(i*110)+'ms';}});
+}
+function countUp(){
+  [].slice.call(document.querySelectorAll('.cu')).forEach(function(n){
+    var to=parseInt(n.dataset.to,10);
+    if(reduce||!to){n.textContent=to;return;}
+    var dur=1100,t0=null;n.textContent='0';
+    function step(t){
+      if(t0===null)t0=t;
+      var k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);
+      n.textContent=Math.round(to*e);
+      if(k<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+setTimeout(countUp,420);
+
+/* ================= 打印 ================= */
+function buildPrint(){
+  var h='<h1>匿名候选人 ANONYMIZED</h1><div class="p-sub">资深资产管理 × AI 资管信息化 · A 集团资管及AI数智化负责人 · 联系方式已隐藏</div>';
+  h+='<h2>职业经历</h2>';
+  EXP.forEach(function(e){
+    h+='<h3>'+e.co+'　<span class="p-yr">'+e.yr+'</span></h3><div class="p-role">'+e.role+' ｜ '+e.stats.map(function(s){return s[0]+' '+s[1];}).join(' · ')+'</div><ul>';
+    e.dp.forEach(function(p){h+='<li><b>'+p[0]+'</b>：'+p[1]+'</li>';});
+    h+='</ul>';
+    if(e.proj)h+='<div class="p-item"><b>重点项目：</b>'+e.proj+'</div>';
+  });
+  h+='<h2>核心能力</h2>';
+  CAP.forEach(function(c){h+='<h3>'+c.t+'</h3><ul>';c.pts.forEach(function(p){h+='<li>'+p+'</li>';});h+='</ul>';});
+  h+='<h2>AI 数智化案例｜公司业务流程优化</h2>';
+  VIBE.forEach(function(v){h+='<h3>'+v.t+'　<span class="p-yr">'+v.tag+'</span></h3><ul>';v.detail.forEach(function(p){h+='<li>'+p+'</li>';});h+='</ul>';});
+  h+='<h2>教育背景</h2><div class="p-item">某高校 管理科学硕士（2009–2012）｜某高校 测绘工程学士（2005–2009）｜某重点中学（2002–2005）</div>';
+  h+='<h2>认证与特质</h2><div class="p-item">腾讯 WorkBuddy 首批 NOVA 大使 ｜ 效率智能体 OPC 从业认证 ｜ MBTI ENTJ ｜ 某高校校友会秘书团成员</div>';
+  h+='<div class="p-foot">本页已隐去姓名、公司等可识别信息，人物形象为匿名示意 · DEVELOPED BY EDDIE · V6.0</div>';
+  document.getElementById('printAll').innerHTML=h;
+}
+window.addEventListener('beforeprint',buildPrint);
+buildPrint();
+})();
+</script>
+</body>
+</html>
